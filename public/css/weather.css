@@ -162,6 +162,7 @@ body {
   color: #bbb;
 }
 .zip-form__submit {
+  -webkit-appearance: none;
   appearance: none;
   background-color: var(--cornflower-blue);
   border: none;
