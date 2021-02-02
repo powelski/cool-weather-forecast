@@ -144,6 +144,7 @@
     }
 
     &__submit {
+        appearance: none;
         background-color: var(--cornflower-blue);
         border: none;
         border-radius: 5px;
