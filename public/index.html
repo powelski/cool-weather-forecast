@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cool Weather Forecast</title>
+    <link rel="stylesheet" href="css/weather.css">
+    <script src="js/weather.js" defer></script>
+</head>
+<body>
+    <header class="header--main">
+        We found You in
+        <div class="location__container">
+            <div class="location"></div>
+            <div class="location__loader"><div></div><div></div></div>
+        </div>
+        <button class="zip-code__button">Not Here?</button>
+    </header>
+    <div class="content--main">
+        <div class="date"></div>
+        <div class="weather__entries"></div>
+    </div>
+    <footer class="footer--main">
+        <form class="zip-form">
+            <label>Enter your zip code</label>
+            <input
+                name="zip-code"
+                type="text"
+                placeholder="Zip Code"
+                pattern="\d+"
+                minlength="5"
+                maxlength="5"
+                required
+                class="zip-form__input"
+            >
+            <input type="submit" value="Submit" class="zip-form__submit">
+        </form>
+    </footer>
+    <template id="weather-template">
+        <div class="weather__entry">
+            <div class="weather__hour"></div>
+            <div class="weather__temperature"></div>
+            <img class="weather__icon" alt="">
+        </div>
+    </template>
+</body>
+</html>

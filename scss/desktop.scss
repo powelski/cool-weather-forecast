@@ -1,0 +1,59 @@
+@media (min-width: 840px) {
+    .content--main {
+        gap: 80px;
+    }
+
+    .date {
+        font-size: 38px;
+    }
+
+    .location {
+        font-size: 38px;
+
+        &__loader {
+            font-size: 50px;
+        }
+    }
+
+    .weather {
+        &__entries {
+            align-items: flex-start;
+            flex-direction: row;
+            gap: 0;
+            height: 200px;
+        }
+
+        &__entry {
+            flex-direction: column;
+            width: 100px;
+        }
+
+        &__hour {
+            align-self: stretch;
+            border-color: #e8e8e8;
+            border-style: solid;
+            border-width: 1px 0;
+            padding: 12px 0;
+            text-align: center;
+        }
+
+        &__temperature {
+            margin: 15px 0;
+        }
+
+        &__hour,
+        &__temperature,
+        &__icon {
+            width: auto;
+        }
+
+        &__icon {
+            height: 50px;
+            margin-top: 5px;
+        }
+    }
+
+    .footer--main {
+        font-size: 22px;
+    }
+}

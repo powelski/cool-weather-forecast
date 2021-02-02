@@ -1,0 +1,17 @@
+@keyframes ripple {
+    from {
+        top: .45em;
+        left: .45em;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+
+    to {
+        top: 0px;
+        left: 0px;
+        width: .9em;
+        height: .9em;
+        opacity: 0;
+    }
+}
